@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <div class="top_index">
+        <nav>
+            <div class="logo">
+                <img class="logo_icon" src="img/xiaoxu.png" alt="">
+            </div>
+            <div class="nav_box" id="nav_box">
+                <span class="mask_box" id="mask_box"></span>
+                <ul class="startlist">
+                    <li>
+                        <a class="selected" href="javascript:;">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">学无止境</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">慢生活</a>
+                    </li>
+                    <li>
+                        <a href="html/select.html">图片展示</a>
+                    </li>
+                    <li>
+                        <a href="html/guanyu.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="html/new.html">今日新闻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">留言</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box">
+                <input class="keyboard" type="text" placeholder="想搜点什么呢...">
+                <p class="seach_ico">
+                    <span class="search"></span>
+                </p>
+            </div>
+        </nav>
+    </div>
+    <div class="article">
+        <main>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <span class="imginfo">【匆匆那些年】总结个人博客经历的这四年… </span>
+                </div>
+                <div class="swiper-button-prev swiper-button-white hide"></div>
+                <div class="swiper-button-next swiper-button-white hide"></div>
+            </div>
+            <div class="blogsbox"></div>
+        </main>
+        <aside>
+            <ul class="aside_box"></ul>
+            <div class="zhuanti">
+                <h2 class="hometitle">
+                    特别推荐
+                    <span class="line"></span>
+                </h2>
+                <ul class="home_box"></ul>
+            </div>
+
+            <div class="tuijian">
+                <h2 class="hometitle">
+                    推荐文章
+                    <span class="line"></span>
+                </h2>
+                <div class="tj_pic">
+                    <img class="tj_icon" src="img/zthome_one.jpg" alt="">
+                    <a href="javascript:;">Just One Last Dance</a>
+                </div>
+            </div>
+
+            <div class="paihang">
+                <h2 class="hometitle">
+                    点击排行
+                    <span class="line"></span>
+                </h2>
+                <div class="ph_pic">
+                    <img class="ph_icon" src="img/cont_one.jpg" alt="">
+                    <a href="javascript:;">作为一个设计师,如果遭到质疑你是否能恪守自己的原则</a>
+                </div>
+            </div>
+
+            <div class="cloud">
+                <h2 class="hometitle">
+                    标签云
+                    <span class="line"></span>
+                </h2>
+                <div class="cloud_btn">
+                    <a href="javascript:;">设计</a>
+                    <a href="javascipt:;">个人博客</a>
+                </div>
+            </div>
+
+            <div class="links">
+                <h2 class="hometitle">
+                    友情链接
+                    <span class="line"></span>
+                </h2>
+            </div>
+
+            <div class="guanzhu">
+                <h2 class="hometitle">
+                    关注我们 么么哒
+                    <span class="line"></span>
+                </h2>
+                <ul>
+                    <li class="sina">
+                        <a href="javascript:;">
+                            <span>新浪微博</span>
+                            小旭博客
+                        </a>
+                    </li>
+                    <li class="tencent">
+                        <a href="javascript:;">
+                            <span>腾讯微博</span>
+                            小旭博客
+                        </a>
+                    </li>
+                    <li class="qq">
+                        <a href="javascript:;">
+                            <span>QQ号</span>
+                            1602931932
+                        </a>
+                    </li>
+                    <li class="email">
+                        <a href="javascript:;">
+                            <span>邮箱账号</span>
+                            1602931932@qq.com
+                        </a>
+                    </li>
+                    <li class="wxgzh">
+                        <a href="javascript:;">
+                            <span>微信号</span>
+                            15835267685
+                        </a>
+                    </li>
+                    <li class="wx">
+                        <img src="img/wx.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>
+            Design by
+            <a href="javascript:;">&nbsp;小旭个人博客&nbsp;</a>
+            <a href="javascript:;">京ICP备11002373号-1</a>
+        </p>
+    </footer>
+    <script type="text/template" id="template">
+        <span class="imginfo">【匆匆那些年】总结个人博客经历的这四年… </span>
+        <div class="swiper-slide">
+            <img src="<%=images%>" alt="">
+        </div>
+    </script>
+    <script type="text/template" id="temp">
+        <li>
+            <a href="javascript:;" title="安静地做一个爱设计的小青年" target="_blank">
+                <i>
+                    <img src="<%=images%>">
+                </i>
+                </a>
+            <h2><%=context%></h2>
+            <span><%=title%></span>
+        </li>
+    </script>
+    <script type="text/template" id="tem_three">
+        <div class="blogs" data-scroll-reveal="enter bottom over 1s" data-scroll-reveal-id = "<%=id%>">
+            <h3 class="blog_title"><%=titles%></h3>
+            <span class="blog_pic">
+                <a href="javascript:;">
+                    <img src="<%=images%>" alt="">
+                </a>
+            </span>
+            <p class="blog_text"><%=context%></p>
+            <ul class="blog_info">
+                <li class="author"></li>
+                <li class="lmname"><%=contname%></li>
+                <li class="timer"><%=times%></li>
+                <li class="view">
+                    <span><%=read%></span>
+                    已阅读
+                </li>
+                <li class="like"><%=like%></li>
+            </ul>
+        </div>
+    </script>
+    <script type="text/template" id="tem_four">
+        <li class="home_list">
+            <a href="javascript:;">
+                <img src="<%=images%>" alt="">
+            </a>
+            <p class="home_text">
+                <%=home_text%>
+                <a class="home_read" href="javascript:;">阅读</a>
+            </p>
+        </li>
+    </script>
+    <script type="text/template" id="tem_five">
+        <div class="tj_news">
+            <a class="tjicon_box" href="javascript:;">
+                <img src="<%=images%>" alt="">
+            </a>
+            <p>
+                <a href="javascript:;"><%=title%></a>
+            </p>
+            <span><%=time%></span>
+        </div>
+    </script>
+    <script type="text/template" id="tem_six">
+        <div class="ph_news">
+            <a class="phicon_box" href="javascript:;">
+                <img src="<%=images%>" alt="">
+            </a>
+            <p>
+                <a href="javascript:;">
+                    <%=title%>
+                </a>
+            </p>
+            <span><%=time%></span>
+        </div>
+    </script>
+    <script type="text"></script>
+    <script src="lib/jquery-1.12.3.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/swiper.js"></script>
+    <script src="lib/scrollreveal.js"></script>
+    <script src="js/select.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

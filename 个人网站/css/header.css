@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+body {
+    position: relative;
+    background-color: #f6f6f6;
+}
+.top_index {
+    position: fixed;
+    top: 0;
+    z-index: 999999;
+    width: 100%;
+    height: 60px;
+    background: rgba(0,0,0,.9);
+}
+.top_index nav {
+    width: 75%;
+    position: relative;
+    height: 100%;
+    margin: 0 auto;
+}
+.top_index .logo {
+    width: 10%;
+    height: 100%;
+    float: left;
+    margin-right: 15px;
+}
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+.nav_box {
+    float: left;
+    width: 65%;
+    height: 100%;
+    position: relative;
+    /* background:red; */
+    margin-left: 25px;
+}
+.mask_box {
+    width: 14%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    opacity: 0.3;
+}
+.startlist {
+    /* float: left; */
+    width: 100%;
+    height: 100%;
+    /* margin-left: 25px; */
+}
+.startlist li {
+    float: left;
+    font-size: 16px;
+    position: relative;
+    z-index: 999;
+    width: 14%;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+}
+.startlist li a {
+    color: #bdbdbd;
+}
+.startlist .selected {
+    color: #00A7EB;
+}
+.startlist li:hover a {
+    color: #00A7EB;
+}
+.search_box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6%;
+    height: 100%;
+    transition: all 0.8s ease 0s;
+    /* background: red; */
+}
+.search_ico {
+    background: cyan;
+    width: 60px;
+    height: 60px;
+    display: block;
+    position: relative;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 60px;
+    cursor: pointer;
+   
+}
+.keyboard {
+    display: none;
+    width: 60%;
+    height: 48%;
+    float: left;
+    text-indent: 10px;
+    font-size: 16px;
+    margin-top: 0.8rem;
+    transform: all 0.5s ease 0.8s;
+}
+.search_box span {
+    display: block;
+    position: absolute;
+    right: 10px;
+    width: 32px;
+    height: 60px;
+    background: url(../img/searchbg.png) no-repeat center;
+}

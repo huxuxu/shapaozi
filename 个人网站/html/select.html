@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/swiper.css">
+    <!-- <link rel="stylesheet" href="../css/header.css"> -->
+    <link rel="stylesheet" href="../css/select.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <div class="top_index">
+        <nav>
+            <div class="logo">
+                <img class="logo_icon" src="../img/xiaoxu.png" alt="">
+            </div>
+            <div class="nav_box" id="nav_box">
+                <span class="mask_box" id="mask_box"></span>
+
+                <ul class="startlist">
+                    <li>
+                        <a class="selected" href="../index.html">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">学无止境</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">慢生活</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">图片展示</a>
+                    </li>
+                    <li>
+                        <a href="guanyu.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="new.html">今日新闻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">留言</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box">
+                <input class="keyboard" type="text" placeholder="想搜点什么呢...">
+                <p class="seach_ico">
+                    <span class="search"></span>
+                </p>
+            </div>
+        </nav>
+    </div>
+    <div class="aside">
+        <h2 class="t_nav">
+            <span>您现在的位置是：
+                <a href="../index.html">首页</a>
+                &nbsp;>&nbsp;
+                <a class="loca_img" href="javascript:;"></a>
+            </span>
+            <a href="javascript:;" class="index_a">网站首页</a>
+            <a href="javascript:;" class="img_a">图片展示</a>
+        </h2>
+        <div class="blogsbox">
+            <div class="blogs" data-scroll-reveal="enter bottom over 1s">
+                <h3 class="blog_title"></h3>
+                <ul class="blog_info">
+                    <li class="author"></li>
+                    <li class="lmname"></li>
+                    <li class="timer"></li>
+                    <li class="view">
+                        <span></span>
+                        已阅读
+                    </li>
+                    <li class="like"></li>
+                </ul>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    
+                </div>
+                <div class="swiper-button-prev swiper-button-white hide"></div>
+                <div class="swiper-button-next swiper-button-white hide"></div>
+            </div>
+        </div>
+        <aside>
+            <div class="zhuanti">
+                <h2 class="hometitle">
+                    特别推荐
+                    <span class="line"></span>
+                </h2>
+                <ul class="home_box"></ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>
+            Design by
+            <a href="javascript:;">&nbsp;小旭个人博客&nbsp;</a>
+            <a href="javascript:;">京ICP备11002373号-1</a>
+        </p>
+    </footer>
+
+    <script type="text/template" id="temp">
+        <span class="imginfo">【匆匆那些年】总结个人博客经历的这四年… </span>
+        <div class="swiper-slide">
+            <img src="<%=images%>" alt="">
+        </div>
+    </script>
+    <script type="text/template" id="template">
+        <li class="home_list">
+            <a href="javascript:;">
+                 <img src="<%=images%>" alt="">
+            </a>
+            <p class="home_text">
+                <%=home_text%>
+                <a class="home_read" href="javascript:;">阅读</a>
+            </p>
+        </li>
+    </script>
+    <script src="../lib/jquery-1.12.3.min.js"></script>
+    <script src="../lib/underscore-min.js"></script>
+    <script src="../lib/swiper.js"></script>
+    <script src="../js/search.js"></script>
+    <!-- <script src="../js/select.js"></script> -->
+    <script src="../js/xiangqing.js"></script>
+</body>
+
+</html>

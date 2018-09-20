@@ -1,0 +1,14 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "home_text": "作为一个设计师,如果遭到质疑你是否能恪守自己的原则?",
+            "images": "../img/zthome_two.jpg"
+        },
+        {
+            "id": "2",
+            "home_text": "安静地做一个爱设计的小青年",
+            "images": "../img/zthome_three.jpg"
+        }
+    ]
+}

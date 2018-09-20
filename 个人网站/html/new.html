@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/time.css">
+    <link rel="stylesheet" href="../css/footer.css">
+</head>
+
+<body>
+    <div class="top_index">
+        <nav>
+            <div class="logo">
+                <img class="logo_icon" src="../img/xiaoxu.png" alt="">
+            </div>
+            <div class="nav_box" id="nav_box">
+                <span class="mask_box" id="mask_box"></span>
+
+                <ul class="startlist">
+                    <li>
+                        <a class="selected" href="../index.html">网站首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">学无止境</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">慢生活</a>
+                    </li>
+                    <li>
+                        <a href="select.html">图片展示</a>
+                    </li>
+                    <li>
+                        <a href="guanyu.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">今日新闻</a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">留言</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="search_box">
+                <input class="keyboard" type="text" placeholder="想搜点什么呢...">
+                <p class="seach_ico">
+                    <span class="search"></span>
+                </p>
+            </div>
+        </nav>
+    </div>
+
+    <!-- <div class="banner">
+        <img src="../img/bannerx2.jpg" alt="">
+    </div> -->
+    <div class="news_box">
+        <div class="new_cont"></div>
+        <div class="aside">
+            <div class="zhuanti">
+                <h2 class="hometitle">
+                    特别推荐
+                    <span class="line"></span>
+                </h2>
+                <ul class="home_box"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="page_box">
+        <a href="#" class="prev" style="float: left;">上一页</a>
+        <div id="pagenum" style="float: left;">
+        </div>
+        <a href="#" class="next" style="float: left;">下一页</a>
+    </div>
+
+    <footer>
+        <p>
+            Design by
+            <a href="javascript:;">&nbsp;小旭个人博客&nbsp;</a>
+            <a href="javascript:;">京ICP备11002373号-1</a>
+        </p>
+    </footer>
+    <script type="text/template" id="template">
+        <div class="news" data-scroll-reveal="enter bottom over 1s" data-scroll-reveal-id = "<%=id%>">
+            <div class="news_icon">
+                <a href="javascript:;">
+                    <img src="<%=image_url%>" alt="">
+                </a>
+            </div>
+            <div class="news_text">
+                <a class="new_title" href="javascript:;"><%=title%></a>
+                <div class="news_bottom">
+                    <a href="javascript:;" class="media">
+                        <img src="<%=media_avatar_url%>" alt="">
+                    </a>
+                    <a href="javascript:;" class="source"><%=source%></a>
+                    <span class="timers"><%=video_duration_str%></span>
+            </div>
+        </div>
+    </script>
+    <script type="text/template" id="tem_four">
+        <li class="home_list">
+            <a href="javascript:;">
+                <img src="<%=images%>" alt="">
+            </a>
+            <p class="home_text">
+                <%=home_text%>
+                <a class="home_read" href="javascript:;">阅读</a>
+            </p>
+        </li>
+    </script>
+    <script src="../lib/jquery-1.12.3.min.js"></script>
+    <script src="../lib/underscore-min.js"></script>
+    <script src="../lib/scrollreveal.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/time.js"></script>
+</body>
+
+</html>
